@@ -16,6 +16,6 @@ agent "" {
     policy = "write"
 }
 
-session "" {
+session_prefix "" {
     policy = "write"
 }
