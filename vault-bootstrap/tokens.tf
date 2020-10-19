@@ -7,6 +7,7 @@ resource "vault_token" "fabio_tvcxpi" {
 
   renewable = true
   ttl       = "24h"
+  no_parent = true
 
   renew_min_lease = 43200
   renew_increment = 86400
@@ -17,6 +18,7 @@ resource "vault_token" "fabio_tvcxvps" {
 
   renewable = true
   ttl       = "24h"
+  no_parent = true
 
   renew_min_lease = 43200
   renew_increment = 86400
@@ -27,6 +29,7 @@ resource "vault_token" "fabio_tvcxserver" {
 
   renewable = true
   ttl       = "24h"
+  no_parent = true
 
   renew_min_lease = 43200
   renew_increment = 86400
@@ -42,6 +45,7 @@ resource "vault_token" "nomad_tvcxpi" {
   ttl       = "72h"
   no_parent = true
 
+  renewable = true
   renew_min_lease = 43200
   renew_increment = 86400
 }
@@ -51,6 +55,7 @@ resource "vault_token" "nomad_tvcxvps" {
 
   policies = ["nomad_server"]
 
+  renewable = true
   ttl       = "72h"
   no_parent = true
 
@@ -63,6 +68,7 @@ resource "vault_token" "nomad_tvcxserver" {
 
   policies = ["nomad_server"]
 
+  renewable = true
   ttl       = "72h"
   no_parent = true
 
