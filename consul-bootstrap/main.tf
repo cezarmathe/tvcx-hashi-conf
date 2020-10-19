@@ -28,6 +28,6 @@ resource "consul_acl_role" "operator" {
 resource "consul_keys" "fabio_config" {
   key {
     path  = "fabio/config"
-    value = "route add consul-ui consul.service.cons.ul:443 https://${var.consul_ui_addr}"
+    value = "route add consul-ui consul.service.cons.ul:443 ${var.consul_ui_addr}"
   }
 }
