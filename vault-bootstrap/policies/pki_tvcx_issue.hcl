@@ -4,6 +4,6 @@ path "cubbyhole/*" {
     capabilities = ["create", "read", "update", "delete", "list"]
 }
 
-path "pki/issue/${role}" {
+path "pki_tvcx/issue/${role}" {
     capabilities = ["create", "read", "update"]
 }
