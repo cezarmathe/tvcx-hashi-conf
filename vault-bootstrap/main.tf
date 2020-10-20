@@ -19,5 +19,3 @@ resource "vault_mount" "kv2_git" {
 # nomad - check nomad.tf
 
 # policies - check policies.tf
-
-# tokens - check tokens.tf
